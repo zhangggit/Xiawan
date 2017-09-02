@@ -16,7 +16,6 @@
         app:backfontcolor="#edf2f1"
         app:backbg="#27a7d6"
 
-
         app:textcontent="标题栏"
         app:textfontsize="18dp"
         app:textfontcolor="#111211"

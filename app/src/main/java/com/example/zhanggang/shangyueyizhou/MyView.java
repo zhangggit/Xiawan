@@ -30,8 +30,9 @@ public class MyView extends LinearLayout {
 
     public MyView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+//        inflate(context,R.layout.item,this);
         //加载布局
-        LayoutInflater.from(context).inflate(R.layout.item,this);
+        LayoutInflater.from(context).inflate(R.layout.item, this);
         //获取控件
         TextView back = findViewById(R.id.back);
         TextView more = findViewById(R.id.more);
@@ -55,14 +56,18 @@ public class MyView extends LinearLayout {
         int morebg = typedArray.getColor(R.styleable.MyView_morebg, Color.BLUE);
 
         //赋值
-        title.setText(titlecontent); title.setTextSize(titlefontsize);
-        title.setTextColor(titlefontcolor); title.setBackgroundColor(titlebg);
+        title.setText(titlecontent);
+        title.setTextSize(titlefontsize);
+        title.setTextColor(titlefontcolor);
+        title.setBackgroundColor(titlebg);
 
-        back.setText(backcontent);back.setTextSize(backfontsize);
+        back.setText(backcontent);
+        back.setTextSize(backfontsize);
         back.setTextColor(backfontcolor);
 //        back.setBackgroundColor(backbg);
 
-        more.setText(morecontent); more.setTextSize(morefontsize);
+        more.setText(morecontent);
+        more.setTextSize(morefontsize);
         more.setTextColor(morefontcolor);
 //        more.setBackgroundColor(morebg);
 
@@ -71,7 +76,7 @@ public class MyView extends LinearLayout {
         back.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (onClickLener!=null){
+                if (onClickLener != null) {
                     onClickLener.getBack(view);
                 }
             }
@@ -80,7 +85,7 @@ public class MyView extends LinearLayout {
         more.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (onClickLener!=null){
+                if (onClickLener != null) {
                     onClickLener.getMore(view);
                 }
             }
@@ -88,9 +93,11 @@ public class MyView extends LinearLayout {
 
 
     }
+
     //接口
-    public interface onClickLener{
+    public interface onClickLener {
         void getBack(View view);
+
         void getMore(View view);
     }
 

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MyView">
-        <attr name="backcontent" format="string"/>
-        <attr name="backfontsize" format="dimension"/>
-        <attr name="backfontcolor" format="color"/>
-        <attr name="backbg" format="color"/>
+        <attr name="backcontent" format="string" />
+        <attr name="backfontsize" format="dimension" />
+        <attr name="backfontcolor" format="color" />
+        <attr name="backbg" format="color" />
 
-        <attr name="textcontent" format="string"/>
-        <attr name="textfontsize" format="dimension"/>
-        <attr name="textfontcolor" format="color"/>
-        <attr name="textbg" format="color"/>
+        <attr name="textcontent" format="string" />
+        <attr name="textfontsize" format="dimension" />
+        <attr name="textfontcolor" format="color" />
+        <attr name="textbg" format="color" />
 
-        <attr name="morecontent" format="string"/>
-        <attr name="morefontsize" format="dimension"/>
-        <attr name="morefontcolor" format="color"/>
-        <attr name="morebg" format="color"/>
+        <attr name="morecontent" format="string" />
+        <attr name="morefontsize" format="dimension" />
+        <attr name="morefontcolor" format="color" />
+        <attr name="morebg" format="color" />
     </declare-styleable>
 </resources>
