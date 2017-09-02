@@ -53,15 +53,20 @@ public class MyView extends LinearLayout {
         float morefontsize = typedArray.getDimension(R.styleable.MyView_morefontsize, 18);
         int morefontcolor = typedArray.getColor(R.styleable.MyView_backfontcolor, Color.GREEN);
         int morebg = typedArray.getColor(R.styleable.MyView_morebg, Color.BLUE);
+
         //赋值
         title.setText(titlecontent); title.setTextSize(titlefontsize);
         title.setTextColor(titlefontcolor); title.setBackgroundColor(titlebg);
 
         back.setText(backcontent);back.setTextSize(backfontsize);
-        back.setTextColor(backfontcolor);back.setBackgroundColor(backbg);
+        back.setTextColor(backfontcolor);
+//        back.setBackgroundColor(backbg);
 
         more.setText(morecontent); more.setTextSize(morefontsize);
-        more.setTextColor(morefontcolor); more.setBackgroundColor(morebg);
+        more.setTextColor(morefontcolor);
+//        more.setBackgroundColor(morebg);
+
+
         //返回监听
         back.setOnClickListener(new OnClickListener() {
             @Override
